@@ -1458,7 +1458,7 @@
 
   // Demo mode fallback (works without Firebase setup)
   let firebaseApp = null, firebaseAuth = null, firebaseDb = null;
-  let isDemoMode = true; // Set to false when Firebase config is added
+  let isDemoMode = false; // Set to false when Firebase config is added
 
   async function initFirebase() {
     try {
