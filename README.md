@@ -1310,7 +1310,7 @@
   function initiateRazorpay() {
     if(!selectedPlanAmount) return;
     // 🔧 Replace with your Razorpay Key ID from dashboard.razorpay.com
-    const RAZORPAY_KEY = 'rzp_test_YOUR_KEY_HERE';
+    const RAZORPAY_KEY = 'rzp_test_SP39PQG9LSSFnh';
     const options = {
       key: RAZORPAY_KEY,
       amount: selectedPlanAmount * 100, // paise
@@ -1334,7 +1334,7 @@
       },
       modal: { ondismiss: () => showToast('Payment cancelled. Your listing was not boosted.') }
     };
-    if(RAZORPAY_KEY === 'rzp_test_YOUR_KEY_HERE') {
+    if(RAZORPAY_KEY === 'rzp_test_SP39PQG9LSSFnh') {
       // Demo mode - simulate payment
       closePremiumModal();
       showToast('🎉 [Demo] Payment of ₹' + selectedPlanAmount + ' simulated! Add Razorpay key for real payments.');
